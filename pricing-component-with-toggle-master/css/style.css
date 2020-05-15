@@ -14,8 +14,8 @@ body {
 .switchBtn {
   position: relative;
   display: inline-block;
-  width: 90px;
-  height: 34px;
+  width: 90px; /*Controla el largo del fondo*/
+  height: 34px; /*Controla el alto del fondo*/
 }
 .switchBtn input {
   display: none;
@@ -36,10 +36,10 @@ body {
 .slide:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 58px;
-  bottom: 4px;
+  height: 26px; /**/
+  width: 26px; /**/
+  left: 58px; /**/
+  bottom: 4px; /*Controla el tamaño de la bolita*/
   background: #fff; /*Color de la bolita*/
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -120,12 +120,8 @@ hr {
   background: var(--Principal);
   border-radius: 10px;
   border: 0px solid #000;
-  transition: all 0.3s ease-in-out;
 }
-.button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
+
 .paquetes .paquete:nth-child(2) {
   background: var(--Principal);
   color: #fff;
@@ -149,6 +145,13 @@ hr {
     transition: all 0.3s ease-in-out;
   }
   .paquete:hover {
+    transform: scale(1.1);
+  }
+  .button {
+    transition: all 0.3s ease-in-out;
+  }
+  .button:hover {
+    cursor: pointer;
     transform: scale(1.1);
   }
 }
