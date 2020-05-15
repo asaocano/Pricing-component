@@ -137,3 +137,18 @@ hr {
   background: #fff;
   color: #696fdd;
 }
+
+@media (min-width: 768px) {
+  .paquetes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .paquete {
+    flex: 0 0 calc(33.3% - 1rem);
+    margin-right: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .paquete:hover {
+    transform: scale(1.1);
+  }
+}
